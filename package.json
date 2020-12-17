@@ -1,0 +1,68 @@
+{
+  "name": "structure-zappts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "axios": "^0.20.0",
+    "connected-react-router": "^6.8.0",
+    "customize-cra": "^1.0.0",
+    "env-cmd": "^10.1.0",
+    "history": "^5.0.0",
+    "react": "^17.0.1",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.1",
+    "yup": "^0.29.3"
+  },
+  "scripts": {
+    "dev": "env-cmd -e dev react-app-rewired start",
+    "qa": "env-cmd -e qa react-app-rewired start",
+    "homolog": "env-cmd -e homolog react-app-rewired start",
+    "prod": "env-cmd -e prod react-app-rewired start",
+    "build-dev": "env-cmd -e build-dev react-app-rewired build",
+    "build-qa": "env-cmd -e build-qa react-app-rewired build",
+    "build-homolog": "env-cmd -e build-homolog react-app-rewired build",
+    "build-prod": "env-cmd -e build-prod react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-root-import": "^6.5.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "prettier": "^2.1.1"
+  }
+}
