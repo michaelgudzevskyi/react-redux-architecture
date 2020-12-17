@@ -1,15 +1,18 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import { persistStore, persistReducer } from 'redux-persist'
+import { combineReducers } from 'redux';
 import storage from 'redux-persist/lib/storage'
 import thunk from 'redux-thunk'
-import reducers from './ducks'
-
-console.log(thunk);
+import counter from "./reducers/counterReducer"
 
 const persistConfig = {
     key: 'root',
     storage,
 }
+
+const reducers = combineReducers({
+    counter,
+});
 
 const initialState = {}
 const middleware = [thunk]

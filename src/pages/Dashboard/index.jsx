@@ -1,10 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { Creators as counterActions } from '../../store/ducks/counter'
+import { decrement, increment} from "../../store/acctions/counterAcction"
 import { Container, DescriptionContainer } from './styles';
 
 const Counter = () => {
-  const { increment, decrement } = counterActions
   const { count } = useSelector((state) => state.counter)
   const dispatch = useDispatch()
 
